@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1FQ784/j6cY/137QU0hcWr7x93voRxT2MZw1T" 
+        crossorigin="anonymous"
+    >
+    <title>Dan's Azure Site</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #0082c8, #005aa7); /* Azure-themed gradient */
+            color: white; /* White text for readability */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .weather-box {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #004aad; /* Deep Azure blue */
+            color: white;
+            border-radius: 10px;
+            width: 50%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn-azure {
+            background-color: #0078d7; /* Bright Azure blue */
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn-azure:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Welcome to Dan's Azure Site</h1>
+        <div class="weather-box">
+            <h3>The weather in London at the moment is:</h3>
+            <h2 id="weather" style="font-weight: bold;">Loading...</h2>
+        </div>
+        <div class="mt-4">
+            <button class="btn-azure" onclick="clicked()">Click Me</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
+
